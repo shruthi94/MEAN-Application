@@ -1,0 +1,27 @@
+<div class="container">
+    <h2>{{title}}</h2>
+   
+   
+   <form class="well" (submit)="addTicket()">
+
+<div class=" form-group">
+ <label><b>Problem Description :</b> </label><textarea [(ngModel)]="description" name="description" placeholder="Describe your problem here" class="form-control" rows="4" type="text" value="" ></textarea>
+<br>
+</div>
+<div class=" form-group">
+<label><b> Affected Offerings  : </b></label><input [(ngModel)]="offerings" name="offerings" placeholder="Offerings" class="form-control" type="text" value=""><br>
+</div>
+<div class=" form-group">
+ <label><b>Preferred Contact   :</b> </label> <input [(ngModel)]="contact" name="contact" placeholder="Contact" class="form-control" type="text" value=""><br>
+</div>
+<div class="btn-group">
+     <button type="submit" class="btn btn-primary">Create Ticket</button>
+     <button type="button" class="btn btn-primary">ReceiveCallNow</button>
+
+</div>
+</form>
+</div>
+
+
+
+

@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  </div>
+
+
+<div class= "row table-bordered" *ngFor= "let ticket of tickets">
+    
+         <div class="col-sm-2">{{ ticket.id}}</div>
+         <div class="col-sm-4">{{  ticket.name}}</div>
+         <div class="col-sm-2">{{ticket.customer}}</div>
+         <div class="col-sm-2">{{ ticket.contact}}</div>
+         <div class="col-sm-2">{{  ticket.offering }}</div>
+    
+</div>
